@@ -3,4 +3,4 @@ resource "aws_sqs_queue" "main" {
   name                       = var.queue_name
   visibility_timeout_seconds = var.visibility_timeout_seconds
 }
-# test comment for task 4
+# new test comment for task 4
