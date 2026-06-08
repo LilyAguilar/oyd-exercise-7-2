@@ -98,6 +98,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: tfplan-dev
+          path: infra
 
       - name: Terraform init
         run: terraform init -backend-config=envs/dev/backend-dev.hcl
@@ -129,6 +130,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: tfplan-dev
+          path: infra
 
       - name: Terraform init
         run: terraform init -backend-config=envs/dev/staging/backend-staging.hcl
